@@ -68,7 +68,4 @@ st.header("Lender Rules")
 editable_df = df.copy()
 edited = st.data_editor(editable_df)
 
-if st.button("Save Changes"):
-    edited.to_excel("updated_lender_rules.xlsx", index=False)
-    st.success("Rules updated and saved to 'updated_lender_rules.xlsx'")
 
